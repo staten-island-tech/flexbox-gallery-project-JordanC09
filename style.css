@@ -1,0 +1,49 @@
+html,body,*{
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background-color: black;
+}
+.header{
+    color:purple;
+    text-align: center;
+    font-size: 10vw;
+}
+.container{
+    display: flex;
+    width: 90%;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card{
+    display:flex;
+    background-color: white;
+    margin: 3rem auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    font-size: 5vw;
+
+    width: 33%;
+
+    border-radius: 1cm;
+    border: 2px solid silver;
+    
+}
+
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: 20vw;
+    
+}
