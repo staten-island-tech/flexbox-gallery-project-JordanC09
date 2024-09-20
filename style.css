@@ -75,3 +75,8 @@ img{
     width: 20vw;
     
 }
+
+.Batoo:hover{
+    transform: scale(1,2) translateY(5px);
+    filter: blur(10px);
+}
