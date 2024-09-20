@@ -76,7 +76,30 @@ img{
     
 }
 
-.Batoo:hover{
-    transform: scale(1,2) translateY(5px);
-    filter: blur(10px);
+
+@keyframes slide-in{
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(120%);
+    }
 }
+
+@keyframes slide-out{
+    from{
+        transform: translateX(90%)
+    }
+    to{
+        transform: translateX(0%)
+    }
+    
+}
+
+#Batcard:hover{
+    animation: slide-in 5s ease-in-out forwards;
+}
+#Batcard:not(:hover){
+    animation: slide-out 2s ease-in-out backwards;
+}
+
