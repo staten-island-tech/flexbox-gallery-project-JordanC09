@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+
 html,body,*{
     font-size: 16px;
     padding: 0;
@@ -5,6 +7,7 @@ html,body,*{
     box-sizing: border-box;
 
 }
+
 body{
     background-image:url("images/home.jpg");
     
@@ -12,11 +15,11 @@ body{
 h1{
     text-align: center;
     font-size: 50px;
-    color: darkblue;
+    color: rgb(222, 39, 216);
 }
 
 .header{
-    color:orange;
+    color:rgb(250, 61, 244);
     text-align: center;
     font-size: 5vw;
 }
@@ -38,7 +41,7 @@ h1{
 
 .card{
     display:flex;
-    background-color: rgb(100, 8, 86);
+    background-color: rgb(53, 3, 54);
     margin: 3rem auto;
     flex-direction: column;
     align-items: center;
@@ -50,7 +53,9 @@ h1{
     height: auto;
 
     border-radius: 1cm;
-    border: 3px solid rgb(200, 145, 145);
+    border: 5px solid rgb(209, 204, 204);
+
+    box-shadow: 10px 5px 5px rgb(209, 204, 204);
 
     
     
@@ -82,31 +87,62 @@ img{
     
 }
 
-
-
-/*@keyframes slide-in{
-    from{
-        transform: translateX(0%);
+@keyframes spin{
+    0%{
+        transform: rotate(-1turn);
+        
     }
-    to{
-        transform: translateX(120%);
+    25%{
+        transform: rotate(0.5turn);
+    }
+
+}
+@keyframes scale{
+    0%{
+        transform: scale(0.5, 0.5);
+        
+    }
+    25%{
+        transform: scale(1, 1);
+    }
+    50%{
+        transform: scale(1.25,1.25);
+    }
+    75%{
+        ransform: scale(1, 1);
+    }
+    100%{
+        ransform: scale(0.5, 0.5);
+    }
+
+}
+@keyframes moov{
+    0%{
+        transform: translate(25px, 10px);
+    }
+    25%{
+        transform: translate(50px, 18px);
+    }
+    50%{
+        transform: translate(75px, 25px);
+    }
+    75%{
+        transform: translate(-50px, -18px);
+    }
+    100%{
+        transform: translate(-25x, -10px);
     }
 }
 
-@keyframes slide-out{
-    from{
-        transform: translateX(90%)
-    }
-    to{
-        transform: translateX(0%)
-    }
-    
+.Batoo:hover{
+    animation: spin 4s;
 }
 
-#Batcard:hover{
-    animation: slide-in 5s ease-in-out forwards;
+.BD:hover{
+    animation: scale 3s linear;
 }
-#Batcard:not(:hover){
-    animation: slide-out 2s ease-in-out backwards;
+
+.Ben:hover{
+    animation: moov 3s linear;
 }
-#/
+
