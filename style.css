@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sofadi+One&display=swap');
+
 
 html,body,*{
     font-size: 16px;
@@ -21,7 +21,7 @@ h1{
 .header{
     color:rgb(250, 61, 244);
     text-align: center;
-    font-size: 5vw;
+    font-size: 5rem;
 }
 .container{
     display: flex;
@@ -32,7 +32,7 @@ h1{
     justify-content: space-between;
     
 
-    position: absolute;
+    position: relative;
 }
 
 
@@ -47,7 +47,7 @@ h1{
     align-items: center;
     justify-content: space-around;
 
-    font-size: 5vw;
+    font-size: 5rem;
 
     width: 20vw;
     height: auto;
@@ -75,15 +75,16 @@ h1{
     }
     .card{
         width: 100%;
-        font-size: 10vw;
+        font-size: 3rem;
     }
 }
 img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 30vw;
-    width: 20vw;
+    height: 25vw;
+    width: 15vw;
+    
     
 }
 
@@ -109,10 +110,10 @@ img{
         transform: scale(1.25,1.25);
     }
     75%{
-        ransform: scale(1, 1);
+        transform: scale(1, 1);
     }
     100%{
-        ransform: scale(0.5, 0.5);
+        transform: scale(0.5, 0.5);
     }
 
 }
@@ -130,10 +131,14 @@ img{
         transform: translate(-50px, -18px);
     }
     100%{
-        transform: translate(-25x, -10px);
+        transform: translate(-25px, -10px);
     }
 }
+@keyframes jam{
+    0%{
+    }
 
+}
 .Batoo:hover{
     animation: spin 4s;
 }
@@ -144,5 +149,8 @@ img{
 
 .Ben:hover{
     animation: moov 3s linear;
+}
+.Alex:hover{
+    transition: margin-right 2s;
 }
 
