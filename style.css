@@ -9,17 +9,27 @@ html,body,*{
 }
 
 body{
-    background-image:url("images/home.jpg");
+    background-image:url("images/back.jpg");
     
 }
 h1{
     text-align: center;
     font-size: 50px;
-    color: rgb(222, 39, 216);
+    color: rgb(142, 11, 11);
+}
+.top{
+    background-color:white;
+    text-align: center;
+    width: 70rem;
+    height: 6rem;
+    margin: auto;
+    border-radius: 2cm;
+
+    position: relative;
 }
 
 .header{
-    color:rgb(250, 61, 244);
+    color:rgb(142, 11, 11);
     text-align: center;
     font-size: 5rem;
 }
@@ -41,7 +51,7 @@ h1{
 
 .card{
     display:flex;
-    background-color: rgb(53, 3, 54);
+    background-color: rgb(24, 135, 24);
     margin: 3rem auto;
     flex-direction: column;
     align-items: center;
@@ -53,9 +63,11 @@ h1{
     height: auto;
 
     border-radius: 1cm;
-    border: 5px solid rgb(209, 204, 204);
+    border: 5px solid rgb(94, 3, 3);
 
-    box-shadow: 10px 5px 5px rgb(209, 204, 204);
+    box-shadow: 10px 5px 5px rgb(78, 3, 3);
+
+    transition: background-color 0.5s;
 
     
     
@@ -82,22 +94,23 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 25vw;
-    width: 15vw;
+    height: auto;
+    width: 20rem;
+    object-fit: cover;
     
     
 }
 
 @keyframes spin{
-    0%{
-        transform: rotate(-1turn);
-        
+    from{
+        transform: rotate(0deg);
     }
-    25%{
-        transform: rotate(0.5turn);
+    to{
+        transform: rotate(359deg);
     }
 
 }
+
 @keyframes scale{
     0%{
         transform: scale(0.5, 0.5);
@@ -139,18 +152,42 @@ img{
     }
 
 }
-.Batoo:hover{
-    animation: spin 4s;
+.las:hover{
+    animation: spin 1s infinite linear;
+}
+.las:not(:hover){
+    animation: slowdown 2s linear;
 }
 
-.BD:hover{
-    animation: scale 3s linear;
+.CP:hover{
+    animation: scale 1s infinite linear;
 }
 
-.Ben:hover{
-    animation: moov 3s linear;
+#Eggcard:hover{
+    background-color: rgb(240, 232, 4);
 }
-.Alex:hover{
-    transition: margin-right 2s;
+#PFcard:hover{
+    transform: scale(0.9);
+}
+.pizza:hover{
+    opacity: 0.5;
+}
+#SPcard:hover{
+    transform:scale(-1, 1);
 }
 
+#Raviolicard:hover{
+    transform: skew(5deg, 5deg);
+}
+#ziticard{
+    transition: transform 1s
+}
+#ziticard:hover{
+    transform: translateY(35px);
+}
+#paninicard{
+    transition: transform 1s
+}
+#paninicard:hover{
+    transform: translateY(-35px);
+}
