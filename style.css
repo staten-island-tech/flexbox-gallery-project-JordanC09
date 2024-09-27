@@ -65,7 +65,7 @@ h1{
 
     font-size: 5rem;
 
-    width: 20vw;
+    width: 24%;
     height: auto;
 
     border-radius: 1cm;
@@ -103,7 +103,7 @@ img{
     height: auto;
     width: 20rem;
     object-fit: cover;
-    border-radius: 2cm;
+    border-radius: 2px;
     
     
 }
@@ -168,6 +168,7 @@ img{
 
 .CP:hover{
     animation: scale 1s infinite linear;
+    animation-delay: 0.5s;
 }
 
 #Eggcard:hover{
